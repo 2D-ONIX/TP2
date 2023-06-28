@@ -168,7 +168,7 @@ export default class nivel2 extends Phaser.Scene {
   
     pasarNivel2() {
       if (this.collectedStars === this.estrellas.getLength()) {
-        this.scene.stop();
+        this.scene.stop("nivel2");
         this.scene.start("nivel3");
       }
     }

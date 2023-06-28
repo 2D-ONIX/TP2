@@ -170,7 +170,7 @@ export default class Juego extends Phaser.Scene {
 
   pasarNivel2() {
     if (this.collectedStars === this.estrellas.getLength()) {
-      this.scene.stop();
+      this.scene.stop("Juego");
       this.scene.start("nivel2");
     }
   }
